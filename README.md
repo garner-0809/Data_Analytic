@@ -8,8 +8,8 @@ from airflow.providers.standard.operators.bash import BashOperator
 import datetime as dt
 import pandas as pd
 
-# DAG Arguments
-# Define DAG Arg:
+#### DAG Arguments
+#### Define DAG Arg:
 default_args = {
     'owner' : 'Andre Garner',
     'start_date':datetime.today(),
