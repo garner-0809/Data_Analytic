@@ -1,5 +1,18 @@
 ##### Data_Analytic Airflow project
-Apache Airflow Project
+##### Apache Airflow Project
+
+
+##### Terminal Command setting up directory path for ETL Airflow Project
+
+##### allowing the permitted user to execut script command in the ETL project
+sudo mkdir -p /home/project/airflow/dags/finalassignment/staging
+
+##### Allowing  Read - Write - Execute status for this ETL project 
+sudo chmod -R 777 /home/project/airflow/dags/finalassignment
+
+##### downloanding tolldata.tgz conmpressed file to be used in thiis project.
+sudo curl https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0250EN-SkillsNetwork/labs/Final%20Assignment/tolldata.tgz -o /home/project/airflow/dags/finalassignment/tolldata.tgz
+
 
 from airflow import DAG
 from airflow.operators.bash import BashOperator
